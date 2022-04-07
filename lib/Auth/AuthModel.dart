@@ -12,6 +12,7 @@ class AuthModel {
   TextEditingController nama = new TextEditingController();
   TextEditingController email = new TextEditingController();
   TextEditingController password = new TextEditingController();
+
   Future<void> postUser() async {
     final response = await http
         .post("http://192.168.1.9/core_hmvc/auth/registerAccount", body: {
